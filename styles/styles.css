@@ -8,16 +8,156 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
+
+  font-family: sans-serif;
+
+  background-color: #f0f0f2;
 }
 
 /* header */
 
-.header {
+.header__wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1362px;
   width: 100%;
+  min-height: 119px;
+  margin: 0 auto;
+  padding-top: 19px;
+
+  /* outline: 1px solid red; */
 }
 
-.header-wrapp {
+.header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+/* header__top */
+
+.header__top {
   display: flex;
-  max-width: 1361px;
+  align-items: center;
+  justify-content: end;
   width: 100%;
+  margin-bottom: 20px;
+
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.header__top a {
+  color: #696969;
+}
+
+.header__logo {
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin-right: 24px;
+}
+
+.header__top-menu-list {
+  display: flex;
+}
+
+.header__top-menu-link {
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.header__top-menu-link--active {
+  background-color: #fff;
+}
+
+/* header-search */
+
+.header__search {
+  margin-left: auto;
+}
+
+.header__top-search {
+  box-sizing: content-box;
+
+  max-width: 119px;
+  min-height: 24px;
+  padding: 10px 50px 10px 41px;
+
+  border: none;
+  border-radius: 7px;
+}
+
+.header__office {
+  margin-left: 25px;
+}
+
+.header__user {
+  position: relative;
+
+  margin-left: 20px;
+}
+
+.header__user svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* .header__user::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+} */
+
+/* header__nav */
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: 18px;
+
+  background-color: #ce253d;
+  border-radius: 14px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-link {
+  padding: 16px;
+
+  color: #fff;
+}
+
+/* nav__nav-button */
+
+.nav__nav-button {
+  margin-right: 7px;
+  padding: 11px 26px 13px 44px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
+  color: #ce253d;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 14px 11px 11px 14px;
+  cursor: pointer;
 }
