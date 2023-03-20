@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+}
+
+.header-wrapp {
+  display: flex;
+  max-width: 1361px;
+  width: 100%;
+}
