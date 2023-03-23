@@ -17,6 +17,10 @@ body {
 
 /* header */
 
+.header {
+  padding: 0 55px;
+}
+
 .header__wrapp {
   display: flex;
   flex-direction: column;
@@ -46,6 +50,7 @@ body {
   align-items: center;
   justify-content: end;
   width: 100%;
+  height: 52px;
   margin-bottom: 20px;
 
   font-size: 15px;
@@ -133,8 +138,16 @@ body {
   border-radius: 14px;
 }
 
+.header_nav-mobile {
+  display: none;
+}
+
 .header__nav-list {
   display: flex;
+}
+
+.header__nav-item--additional {
+  display: none;
 }
 
 .header__nav-link {
@@ -146,6 +159,8 @@ body {
 /* nav__nav-button */
 
 .nav__nav-button {
+  position: relative;
+
   margin-right: 7px;
   padding: 11px 26px 13px 44px;
 
@@ -160,4 +175,76 @@ body {
   border: none;
   border-radius: 14px 11px 11px 14px;
   cursor: pointer;
+}
+
+.nav__nav-button::before {
+  content: "SOS";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4px;
+
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: auto;
+
+  font-size: 13px;
+  line-height: 34px;
+  color: #fff;
+
+  background-color: #ce253d;
+  border-radius: 10px
+}
+
+@media screen and (max-width: 1380px) {
+
+  .header__top-menu-item:first-child {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1270px) {
+
+  .header__nav-item:nth-last-child(1) {
+    display: none;
+  }
+
+  .header__nav-item--additional {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 1260px) {
+
+  .header__logo {
+    margin-left: 14px;
+  }
+
+  .header__top-menu {
+    display: none;
+  }
+
+  .header__nav-left {
+    display: none;
+  }
+
+  .header_nav-mobile {
+    display: block;
+    padding: 18px;
+    color: #fff;
+  }
+
+  .header_nav-mobile-row {
+    display: flex;
+    gap: 10px;
+  }
+
+
+  .header_nav-mobile-link {
+    color: #fff;
+  }
 }
