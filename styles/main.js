@@ -4,4 +4,5 @@ let sum = function(a, b) {
 }
 
 sum(1, 12);
-console.log(sum);e
+console.log(sum);
+ss
